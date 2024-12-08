@@ -587,6 +587,10 @@ img {
   margin-bottom: 8px;
 }
 
+.comment-box {
+  margin-bottom: 16px;
+}
+
 .modal-form-label {
   color: #8e8f99;
   font-size: 12px;
@@ -603,15 +607,10 @@ img {
 
 .modal-form-box {
   position: relative;
-  width: 360px;
-  height: 40px;
-  border: 1px solid #2e2f4266;
-  padding: 19px;
-  border-radius: 4px;
 }
 
 .modal-form-input {
-  width: 100%;
+  width: 100%; 
   border: 0;
   height: 40px;
   font-size: 16px;
@@ -624,11 +623,9 @@ img {
 }
 
 .modal-form-input:focus {
+  border: 1px solid;
   border-color: #4d5ae5;
-}
-
-.modal-form-box:focus-within .modal-form-svg {
-  fill: #4d5ae5;
+  
 }
 
 .modal-form-textarea {
@@ -659,11 +656,6 @@ img {
 .modal-form-textarea:focus {
   border: 1px solid;
   border-color: #4d5ae5;
-  outline: 0;
-}
-
-.modal-form-input:focus {
-  border: 0;
   outline: 0;
 }
 
@@ -753,7 +745,7 @@ img {
   right: 0;
 }
 
-.footer-subscribe-box {
+.footer-subscribe-form {
   display: flex;
   gap: 24px;
 }
@@ -765,6 +757,7 @@ img {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--color-white);
+  margin-bottom: 16px;
 }
 
 .footer-subscribe-input {

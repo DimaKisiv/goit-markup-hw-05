@@ -458,19 +458,22 @@
         </div>
         <div class="footer-subscribe-container">
           <p class="footer-subscribe-headline">Subscribe</p>
-          <div class="footer-subscribe-box">
-            <input
-              class="footer-subscribe-input"
-              type="text"
-              placeholder="E-mail"
-            />
+          <form class="footer-subscribe-form">
+            <label>
+              <input
+                class="footer-subscribe-input"
+                type="text"
+                placeholder="E-mail"
+                name="email-footer"
+              />
+            </label>
             <button class="footer-subscribe-button">
               Subscribe
               <svg class="modal-close-svg" width="24" height="20">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -528,7 +531,7 @@
               </svg>
             </div>
           </div>
-          <div class="modal-form-item">
+          <div class="modal-form-item comment-box">
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-textarea"
