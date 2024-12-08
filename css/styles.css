@@ -699,17 +699,13 @@ img {
 }
 
 .modal-checkbox-holder input:checked + label .modal-terms-checkbox {
-  background-color: var(--bg-checked); /* Change background color */
-  border: none; /* Remove border */
+  background-color: var(--bg-checked);
+  border: none;
+  fill: var(--icon-fill); 
 }
 
 .modal-checkbox-holder input:checked + label .modal-terms-checkbox .checkbox-svg {
-  fill: var(--icon-fill); /* Change icon color */
-}
-
-
-.checkbox-svg {
-  
+  fill: var(--icon-fill); 
 }
 
 
