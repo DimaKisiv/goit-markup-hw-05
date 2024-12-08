@@ -6,6 +6,8 @@
   --color-light: #f4f4fd;
   --color-white: #ffffff;
   --icon-color: #f4f4fd;
+  --bg-checked: #404bbf;
+  --icon-fill: #F4F4FD;
 }
 
 /*#region Normalization */
@@ -696,11 +698,15 @@ img {
   fill: transparent;
 }
 
-#user-privacy:checked + .modal-terms-checkbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #F4F4FD
+.modal-checkbox-holder input:checked + label .modal-terms-checkbox {
+  background-color: var(--bg-checked); /* Change background color */
+  border: none; /* Remove border */
 }
+
+.modal-checkbox-holder input:checked + label .modal-terms-checkbox .checkbox-svg {
+  fill: var(--icon-fill); /* Change icon color */
+}
+
 
 .checkbox-svg {
   
@@ -806,6 +812,9 @@ img {
 }
 
 .footer-subscribe-button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
   border: 0;
   gap: 16px;
   min-width: 165px;
